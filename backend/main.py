@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 from tensorflow.keras.models import load_model
 
-# ✅ SNN imports
+# SNN imports
 import torch
 import torch.nn as nn
 import snntorch as snn
@@ -194,7 +194,6 @@ async def predict(file: UploadFile):
 
         xgb_pred_raw = xgb_model.predict(xgb_df)[0]
 
-        # 🔥 THIS LINE WAS MISSING
         xgb_pred = xgb_label_encoder.inverse_transform([xgb_pred_raw])[0]
 
         xgb_conf = float(np.max(xgb_model.predict_proba(xgb_df)[0]) * 100)
