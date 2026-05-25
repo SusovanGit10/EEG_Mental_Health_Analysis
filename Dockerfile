@@ -2,9 +2,11 @@ FROM python:3.10
 
 WORKDIR /app
 
-COPY backend/ /app/
+COPY backend /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN ls -la
+
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 EXPOSE 7860
 
