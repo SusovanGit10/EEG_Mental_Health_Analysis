@@ -54,8 +54,6 @@ const MODEL_CONFIGS = [
   { key: "svm", title: "SVM", color: "#1565c0", icon: <Insights />, bg: "#e3f2fd", border: "#bbdefb" },
   { key: "cnn", title: "CNN", color: "#4527a0", icon: <Memory />, bg: "#ede7f6", border: "#d1c4e9" },
   { key: "xgboost", title: "XGBoost", color: "#ef6c00", icon: <Assessment />, bg: "#fff3e0", border: "#ffe0b2" },
-
-  // ✅ NEW MODEL
   { key: "snn", title: "SNN", color: "#d81b60", icon: <Psychology />, bg: "#fce4ec", border: "#f8bbd0" }
 ];
 
