@@ -54,53 +54,24 @@ https://susovanhuggingface10-eeg-mental-health-analysis.hf.space
 - React.js
 - Axios
 - Recharts
-- CSS
 
 ### Backend
 - FastAPI
-- Python
 - TensorFlow
 - PyTorch
 - Scikit-learn
 - XGBoost
 
 ### Deployment
-- Vercel (Frontend)
-- Hugging Face Spaces (Backend)
+- Vercel
+- Hugging Face Spaces
 - Docker
-
----
-
-## 📂 Project Structure
-
-```bash
-EEG_Mental_Health_Analysis/
-│
-├── backend/
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── *.pkl
-│   ├── *.pth
-│   └── *.h5
-│
-├── frontend/
-│   └── user/
-│       ├── src/
-│       ├── public/
-│       └── package.json
-│
-├── Dockerfile
-├── .dockerignore
-└── README.md
-```
 
 ---
 
 ## ⚡ API Endpoint
 
-### POST `/predict`
-
-Upload EEG CSV data for prediction.
+POST `/predict`
 
 Example:
 
@@ -129,8 +100,6 @@ git clone https://github.com/SusovanGit10/EEG_Mental_Health_Analysis.git
 cd EEG_Mental_Health_Analysis
 ```
 
----
-
 ### Backend Setup
 
 ```bash
@@ -140,14 +109,6 @@ pip install -r requirements.txt
 
 uvicorn main:app --reload
 ```
-
-Backend runs on:
-
-```bash
-http://127.0.0.1:8000
-```
-
----
 
 ### Frontend Setup
 
@@ -159,54 +120,23 @@ npm install
 npm start
 ```
 
-Frontend runs on:
-
-```bash
-http://localhost:3000
-```
-
----
-
-## 📊 Sample Output
-
-The system provides:
-
-- Final prediction
-- Confidence score
-- Individual model predictions
-- EEG wave analysis
-- Comparative performance chart
-
 ---
 
 ## 🔒 Disclaimer
 
-This project is developed for educational and research purposes only.
-
-It is not intended to replace professional medical diagnosis or treatment.
+This project is for educational and research purposes only.
 
 ---
 
 ## 👨‍💻 Author
 
-### Susovan Hati
+Susovan Hati
 
-- GitHub: https://github.com/SusovanGit10
-- Project: EEG Mental Health Analysis
-
----
-
-## ⭐ Support
-
-If you like this project:
-
-- Star the repository
-- Fork the project
-- Share feedback
-- Contribute improvements
+GitHub:
+https://github.com/SusovanGit10
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+MIT License
