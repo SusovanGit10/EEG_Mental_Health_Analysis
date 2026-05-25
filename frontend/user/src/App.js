@@ -72,7 +72,7 @@ export default function App() {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await axios.post("https://eeg-mental-health-analysis.onrender.com/predict", formData);
+      const res = await axios.post("https://susovanhuggingface10-eeg-mental-health-analysis.hf.space/predict", formData);
       setResult(res.data);
     } catch (error) {
       setResult({ error: "Failed to communicate with the server. Please check your backend." });
