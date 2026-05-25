@@ -4,10 +4,8 @@ WORKDIR /app
 
 COPY backend /app
 
-RUN ls -la
-
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 EXPOSE 7860
 
-CMD ["python", "main.py"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
